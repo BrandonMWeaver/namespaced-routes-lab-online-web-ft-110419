@@ -7,8 +7,10 @@ class Admin::PreferencesController < ApplicationController
     @preference.update(params)
   end
   
+  private
+  
   def preferences_params
-    
+    params.require(:preference).permit(:allow_create_songs, :allow_create_artists)
   end
   
 end
