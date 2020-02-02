@@ -38,7 +38,8 @@ class SongsController < ApplicationController
         render :new
       end
     else
-      redirect_to
+      redirect_to songs_path
+    end
   end
 
   def edit
