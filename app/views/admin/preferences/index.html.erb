@@ -1,4 +1,4 @@
-<%= form_for Preference.new, url: do |f| %>
+<%= form_for Preference.new, url: admin_preferences_path do |f| %>
   <%= f.label :allow_create_songs %>
   <%= f.check_box :allow_create_songs %>
   <%= f.label :allow_create_artists %>
