@@ -7,4 +7,8 @@ class Admin::PreferencesController < ApplicationController
     @preference.update(params)
   end
   
+  def preferences_params
+    
+  end
+  
 end
