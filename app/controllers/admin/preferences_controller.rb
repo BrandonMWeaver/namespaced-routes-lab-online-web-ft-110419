@@ -4,7 +4,7 @@ class Admin::PreferencesController < ApplicationController
   end
   
   def create
-    Preference.first.update(params)
+    Preference.first.update(preferences_params)
   end
   
   private
